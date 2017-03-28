@@ -1,58 +1,3 @@
-// /**
-//  * Sample React Native App
-//  * https://github.com/facebook/react-native
-//  * @flow
-//  */
-//
-// import React, { Component } from 'react';
-// import {
-//   AppRegistry,
-//   StyleSheet,
-//   Text,
-//   View
-// } from 'react-native';
-//
-// export default class demoFirebase extends Component {
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text style={styles.welcome}>
-//           Welcome to React Native!
-//         </Text>
-//         <Text style={styles.instructions}>
-//           To get started, edit index.android.js
-//         </Text>
-//         <Text style={styles.instructions}>
-//           Double tap R on your keyboard to reload,{'\n'}
-//           Shake or press menu button for dev menu
-//         </Text>
-//       </View>
-//     );
-//   }
-// }
-//
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
-//
-// AppRegistry.registerComponent('demoFirebase', () => demoFirebase);
-
-
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -78,9 +23,6 @@ const StatusBar = require('./components/StatusBar');
 const ActionButton = require('./components/ActionButton');
 const ListItem = require('./components/ListItem');
 const styles = require('./styles.js');
-// const prompt = require('react-native-prompt-android');
-
-
 
 
 
@@ -135,20 +77,6 @@ export default class demoFirebase extends Component {
   }
 
   _addItem() {
-    // Alert.prompt(
-    //   'Add New Item',
-    //   null,
-    //   [
-    //     {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
-    //     {
-    //       text: 'Add',
-    //       onPress: (text) => {
-    //         this.itemsRef.push({ title: text })
-    //       }
-    //     },
-    //   ],
-    //   'plain-text'
-    // );
 
     prompt(
       'Add New Item',
@@ -163,28 +91,12 @@ export default class demoFirebase extends Component {
         },
       ],
       {
-        // type: 'secure-text',
         type: 'plain-text',
         cancelable: false,
         defaultValue: '',
         placeholder: ''
       }
     );
-
-
-    // Alert.alert(
-    //   'Alert Title',
-    //   'My Alert Msg',
-    //   [
-    //     {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
-    //     {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
-    //     {text: 'OK', onPress: () => console.log('OK Pressed')},
-    //   ],
-    //   { cancelable: false }
-    // )
-      // return (
-      //   <View style={{backgroundColor:'red', flex:1}}></View>
-      // );
 
 
 
